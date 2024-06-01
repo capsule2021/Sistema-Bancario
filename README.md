@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/capsule2021/Sistema-Bancario)
 ![GitHub last commit](https://img.shields.io/github/last-commit/capsule2021/Sistema-Bancario)
 
-Este é um projeto de sistema bancário simples desenvolvido em Python. Ele permite a criação de contas bancárias, depósitos, saques e transferências entre contas.
+Este é um projeto de sistema bancário simples desenvolvido em Python. Ele permite a criação de contas bancárias, depósitos e saques 
 
 ## Funcionalidades
 
