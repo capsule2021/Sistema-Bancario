@@ -8,10 +8,11 @@ Este é um projeto de sistema bancário simples desenvolvido em Python. Ele perm
 
 ## Funcionalidades
 
-- **Criação de Conta:** Os usuários podem criar uma nova conta bancária fornecendo informações como nome, CPF e saldo inicial.
+- **Criação de Conta:** O sistema permite a criação de uma conta bancária especificando o número da conta, nome do titular e saldo inicial.
 - **Depósito:** Os titulares de conta podem depositar dinheiro em suas contas bancárias.
 - **Saque:** Os titulares de conta podem sacar dinheiro de suas contas bancárias, desde que tenham saldo suficiente.
-- **Transferência:** Os titulares de conta podem transferir dinheiro entre suas contas bancárias e contas de outros titulares de conta.
+- **Verificação de Saldo:** Os titulares de conta podem verificar o saldo atual de suas contas.
+- **Menu de Operações:** O sistema apresenta um menu de operações para que os usuários escolham as ações a serem realizadas.
 
 ## Pré-requisitos
 
