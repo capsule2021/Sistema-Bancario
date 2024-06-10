@@ -1,5 +1,3 @@
-
-
 class Conta:
     """
     Classe para representar uma conta bancária.
@@ -68,27 +66,38 @@ def exibir_menu():
     print("4. Sair")
     return input("Escolha uma opção: ")
 
+def depositar_valor(conta):
+    """Realiza a operação de depósito na conta."""
+    try:
+        valor = float(input("Digite o valor para depósito: R$:"))
+        conta.depositar(valor)
+    except ValueError as ve:
+        print(f"Erro: {ve}")
+
+def sacar_valor(conta):
+    """Realiza a operação de saque na conta."""
+    try:
+        valor = float(input("Digite o valor para saque: R$:"))
+        conta.sacar(valor)
+    except ValueError as ve:
+        print(f"Erro: {ve}")
+
 def tratar_opcao(opcao, conta):
     """Trata a opção escolhida pelo usuário no menu.
 
     Args:
         opcao (str): A opção escolhida pelo usuário.
         conta (Conta): A instância da conta bancária.
+
+    Returns:
+        bool: True se o programa deve continuar, False se deve sair.
     """
     if opcao == '1':
         conta.verificar_saldo()
     elif opcao == '2':
-        try:
-            valor = float(input("Digite o valor para depósito: R$"))
-            conta.depositar(valor)
-        except ValueError as ve:
-            print(f"Erro: {ve}")
+        depositar_valor(conta)
     elif opcao == '3':
-        try:
-            valor = float(input("Digite o valor para saque: R$"))
-            conta.sacar(valor)
-        except ValueError as ve:
-            print(f"Erro: {ve}")
+        sacar_valor(conta)
     elif opcao == '4':
         print("Saindo do sistema. Até logo!")
         return False
